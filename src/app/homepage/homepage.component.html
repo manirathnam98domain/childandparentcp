@@ -1,0 +1,15 @@
+<div class="main-container">
+  <div class="input-container">
+    <input type="text" [(ngModel)]="displayvalue">
+
+  </div>
+
+  <div class="header-row">
+    <div class="header col">Country</div>
+    <div class="header col">Captial</div>
+  </div>
+
+  <div class="row" *ngFor="let item of arrValues | sort:'name'">
+    <div class="col" >{{ item.name }}</div>
+  </div>
+</div>

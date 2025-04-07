@@ -1,0 +1,13 @@
+
+<div class="row col-md-6">
+    <div class="headervalue">
+        <div class="col-md-6">
+            <h4>Parent Component</h4>
+            <input type="text" [(ngModel)]="defualtValue">
+        </div>
+        <span>Value From {{messageChild}}</span>
+    </div>
+</div>
+
+<app-child [defualtValueChild]="defualtValue" (sendMessageToParent)="receviceMessage($event)"></app-child>
+
